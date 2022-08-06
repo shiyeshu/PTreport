@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="./css/layui.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<title>第一步骤</title>
+</head>
+<body >
+	<div style="width:80vw;margin-top:100px" class="center-block">
+
+<div class="layui-card " >
+    <div class="layui-card-header layui-bg-gray" >
+        渗透报告自动化生成系统
+    </div>
+    <div class="layui-card-body" style="background-color: #e2e2e2;">
+<form class="layui-form layui-form-item" action="index_2.php" method="POST">
+  测试的系统名称<input lay-verify="required" class="layui-input" type="text" name="system_name"><br>
+  <div class="layui-row">
+	  <div class="layui-col-md4">
+  高危数量<input lay-verify="number|required" class="layui-input" style="" type="text" name="level1">
+  中危数量<input lay-verify="number|required" class="layui-input" style="" type="text" name="level2">
+  低危数量<input lay-verify="number|required" class="layui-input" style="" type="text" name="level3">
+  </div>
+  <div class="layui-col-md4">
+&nbsp;
+	  </div>
+	<div class="layui-col-md4">
+
+		<div class="layui-card">
+		  <div class="layui-card-header">提示</div>
+		  <div class="layui-card-body">
+高中低危数量填写不影响后续步骤，但是如果填错漏洞统计的内容就需要后期再修改。否则就会出现统计表格和余下内容不匹配。
+		  </div>
+		</div>
+		  </div>  
+ </div>
+  
+  <div class="layui-form-item" style="margin-top: 50px;">
+      <div class="layui-input-block">
+        <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+        
+      </div>
+    </div>
+</form>		
+
+		
+    </div>
+</div>
+</div>
+<script src="layui.js"></script>
+<script>
+layui.use('form', function(){
+  var form = layui.form;
+  
+ 
+});
+</script>
+</body>
+
+</html>
